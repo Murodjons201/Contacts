@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <title>starter</title>
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -16,6 +18,39 @@
 
     <!-- MAIN -->
     <main class="main">
+
+        <section>
+            <div class="container my-5 d-flex justify-content-between">
+                <form class="form w-75">
+                    <h1 class="h1 mb-3 p-0 text-primary">New contacts form</h1>
+                    <div class="mb-3">
+                        <label class="form-label w-50">
+                            <input class="form__input-name form-control" type="name" name="user_name"
+                                placeholder="Name:" required autocomplete="off">
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label w-50">
+                            <input class="form__input-relationship form-control" type="text" name="user_name"
+                                placeholder="Relationship:" required autocomplete="off">
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label w-50">
+                            <input class="form__input-phone form-control" type="number" min="0" name="user_name"
+                                placeholder="Phone: 900020079" required autocomplete="off">
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-50">Add contacts</button>
+                </form>
+
+                <div class="d-flex flex-column align-items-center">
+                    <p class="h1 mb-3 text-primary">Contacts</p>
+                    <ul class="listGroup">
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -30,4 +65,5 @@
     <script src="./js/script.js"></script>
 
 </body>
+
 </html>
